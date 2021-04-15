@@ -10,6 +10,7 @@ How to use:
 5. If you need to follow from a list you scraped, run the follow_from_a_list.py file
 6. If you need to unfollow people, run the unfollow.py file
 <br>
+
 How to scrape:<br>
 1. Scrape followers using scrapefollowers.py
 2. Go to Home directory/InstaPy/logs/your_username/relationship_data/target_username/followers/log file with date.json
