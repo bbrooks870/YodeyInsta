@@ -13,7 +13,7 @@ How to use:
 
 Now you can run follow.py or watchstories.py
 
-Dependencies:
+Dependencies:<br>
 <a href="https://github.com/valentino1337/InstaPy">InstaPy</a><br>
 Firefox<br>
 Geckodriver
