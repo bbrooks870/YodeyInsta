@@ -17,7 +17,7 @@ How to scrape:<br>
 4. Find and replace " with '
 5. Find and replace spaces with nothing
 6. Copy the whole file and paste it into followerlist.py file
-7. Define it as the "tofollow" variable<br>
+7. Define it as the "tofollow" variable<br><br>
 Dependencies:<br>
 <a href="https://github.com/valentino1337/InstaPy">InstaPy</a><br>
 Selenium<br>
