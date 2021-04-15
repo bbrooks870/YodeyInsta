@@ -1,6 +1,6 @@
 # YodeyInsta
 This is one of my first Python projects. A simple InstaPy-based bot for Instagram marketing. Can follow from a list, scrape followers, watch stories and reels, and unfollow (not currently working due to a bug in InstaPy)
-Preferably uses<a href="https://github.com/valentino1337/InstaPy">my fork of InstaPy</a>, but is complatible with the <a href="https://github.com/timgrossmann/InstaPy">vanilla one</a>
+Preferably uses <a href="https://github.com/valentino1337/InstaPy">my fork of InstaPy</a>, but is complatible with the <a href="https://github.com/timgrossmann/InstaPy">vanilla one</a>
 
 How to use:
 1. Run the firstrun.py
