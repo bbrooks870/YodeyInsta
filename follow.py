@@ -62,5 +62,4 @@ while unfollowed == 3:
     while timeout == 1:
         unfollowed = unfollowed - 3
 
-
 print('Followed everyone')
