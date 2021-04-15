@@ -11,13 +11,12 @@ How to use:
 6. If you need to unfollow people, run the unfollow.py file
 <br>
 How to scrape:<br>
-1. Scrape their followers using the scrapefollowers.py
-2. After you've scraped enough followers, go to your Home directory/InstaPy/logs/your_username/relationship_data/target_username/followers/log file with date.json
-3. Open it in nano or vim, because it can crash gedit and other GUI editors if you have thousands of followers scraped
-4. Find and replace " with '
-5. Find and replace spaces with nothing
-6. Copy the whole file and paste it into followerlist.py file
-7. Define it as the "tofollow" variable
+1. Scrape followers using scrapefollowers.py
+2. Go to Home directory/InstaPy/logs/your_username/relationship_data/target_username/followers/log file with date.json
+3. Open it in nano or vim, GUI editors tend to crash if you have thousands of names there
+4. Replace " with '
+5. Replace spaces with nothing
+6. Copy everything and paste it into the scraped.py list as the variable
 <br>
 Dependencies:<br>
 <a href="https://github.com/valentino1337/InstaPy">InstaPy</a><br>
