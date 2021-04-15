@@ -12,3 +12,8 @@ How to use:
 7. Define it as the "tofollow" variable
 
 Now you can run follow.py or watchstories.py
+
+Dependencies:
+<a href="https://github.com/valentino1337/InstaPy">InstaPy</a>
+Firefox
+Geckodriver
