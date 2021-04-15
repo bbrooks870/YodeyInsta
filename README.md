@@ -1,5 +1,5 @@
 # YodeyInsta
-This is one of my first Python projects. A simple InstaPy-based bot for Instagram marketing. Can follow user followers (not working right now, fork if you can fix it), scrape followers, follow from the scraped list, watch stories and reels, and also unfollow if you happen to reach the following limit of 5000<br>
+This is one of my first Python projects. A simple Selenium-based, semi-InstaPy-based bot for Instagram marketing. Can follow user followers, scrape followers, follow from the scraped list, watch stories and reels, and also unfollow if you happen to reach the following limit of 5000<br>
 Uses <a href="https://github.com/valentino1337/InstaPy" target="_blank">my fork of InstaPy</a>, but is fully complatible with the <a href="https://github.com/timgrossmann/InstaPy">vanilla</a> one
 
 How to use:
@@ -17,7 +17,8 @@ How to scrape:<br>
 4. Find and replace " with '
 5. Find and replace spaces with nothing
 6. Copy the whole file and paste it into followerlist.py file
-7. Define it as the "tofollow" variable<br><br>
+7. Define it as the "tofollow" variable
+<br>
 Dependencies:<br>
 <a href="https://github.com/valentino1337/InstaPy">InstaPy</a><br>
 Selenium<br>
