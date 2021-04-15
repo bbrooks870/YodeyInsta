@@ -6,7 +6,7 @@ How to use:
 1. Put your username and password into the variables in creds.py
 2. If you want to watch stories and reels, you gotta scrape followers - that is the only function InstaPy is used for
 3. To scrape followers, you should run firstrun.py (for the intial cookie creation) and it will then start scraping
-4. If you need to follow user followers, <strike>just run the follow.py file</strike> scrape their followers
+4. If you need to follow user followers, just run the follow.py file <strike>scrape their followers</strike>
 5. If you need to follow from a list you scraped, run the follow_from_a_list.py file
 6. If you need to unfollow people, run the unfollow.py file
 <br>
