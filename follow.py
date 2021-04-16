@@ -40,17 +40,17 @@ while unfollowed <= 2:
     #while driver.find_element_by_class_name('sqdOP.L3NKy._8A5w5'):
     while driver.find_elements_by_xpath('/html/body/div[1]/section/main/div/ul/div/li[' + str(follownu) + ']/div/div[2]/button'):
         scrollcounter = 0
-        while scrollcounter <= 11:
+        while scrollcounter <= 10:
             driver.find_element_by_xpath('/html/body/div[1]/section/main/div/ul/div/li[' + str(follownu) + ']/div/div[2]/button').click()
             time.sleep(cooldown)
             follownu = follownu + 1
             scrollcounter = scrollcounter + 1
-            print('Followed the the ' + str(scrollcounter) + '. user')
+            #print('Followed the the ' + str(scrollcounter) + '. user')
         while scrollcounter == 11:
             time.sleep(0.5)
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(0.5)
-            scrollcounter = scrollcounter - 12
+            scrollcounter = scrollcounter - 11
             unfollowed = unfollowed + 1
             print('Scrolled for the ' + str(unfollowed) + '. time')
 while unfollowed == 3:
@@ -61,5 +61,6 @@ while unfollowed == 3:
         timeout = timeout + 1
     while timeout == 1:
         unfollowed = unfollowed - 3
+
 
 print('Followed everyone')
