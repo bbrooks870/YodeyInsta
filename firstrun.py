@@ -1,3 +1,4 @@
+from instapy import InstaPy
 import time
 import sys
 
@@ -11,4 +12,8 @@ with open('creds.txt', 'w') as credentials:
 print('============================================================')
 print('Saved the credentials into the creds.txt file. Keep it safe!')
 print('============================================================')
+
+session = InstaPy(username= str(username), password= str(password))
+session.login()
+
 sys.exit()
