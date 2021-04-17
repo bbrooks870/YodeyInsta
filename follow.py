@@ -9,8 +9,13 @@ driver = webdriver.Firefox(profile)
 cooldown = random.uniform(2.5, 3.5)
 unfollowcooldown = random.uniform(900, 930)
 
-from creds import username
-from creds import password
+#from creds import username
+#from creds import password
+
+with open('creds.txt', 'r') as file:
+    content = file.readlines()
+    username = content[0]
+    password = content[1]
 
 #driver.set_window_size(853, 853)
 driver.set_window_size(480, 853)

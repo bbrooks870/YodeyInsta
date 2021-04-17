@@ -1,13 +1,14 @@
-from instapy import InstaPy
+import time
+import sys
 
-from creds import username
-from creds import password
-session = InstaPy(username= str(username), password= str(password))
-session.login()
-session.end()
+username = str(input('Your username?: '))
+password = str(input('Your password?: '))
 
-print("=====================================")
-print("NOW FOLLOW THE README.MD INSTRUCTIONS")
-print("=====================================")
+with open('creds.txt', 'w') as credentials:
+    credentials.writelines(username + '\n')
+    credentials.writelines(password)
 
-import scrapefollowers
+print('============================================================')
+print('Saved the credentials into the creds.txt file. Keep it safe!')
+print('============================================================')
+sys.exit()

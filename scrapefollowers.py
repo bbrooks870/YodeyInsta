@@ -1,8 +1,14 @@
 from instapy import InstaPy
-gurun = str(input('Username to scrape followers from?: '))
+gurun = str(input('Guru username?: '))
 
-from creds import username
-from creds import password
+#from creds import username
+#from creds import password
+
+with open('creds.txt', 'r') as file:
+    content = file.readlines()
+    username = content[0]
+    password = content[1]
+
 session = InstaPy(username= str(username), password= str(password))
 session.login()
 

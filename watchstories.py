@@ -2,11 +2,17 @@ from instapy import InstaPy
 
 storypercent = int(input("What percentage of stories to watch?: "))
 
-from creds import username
-from creds import password
+#from creds import username
+#from creds import password
+
+with open('creds.txt', 'r') as file:
+    content = file.readlines()
+    username = content[0]
+    password = content[1]
+
 session = InstaPy(username= str(username), password= str(password))
 session.login()
 
-from followerlist import tofollow
+from scraped import listt
 session.set_do_story(enabled = True, percentage = int(storypercent), simulate = True)
-session.story_by_users(tofollow)
+session.story_by_users(listt)
