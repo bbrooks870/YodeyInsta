@@ -39,6 +39,7 @@ print('Starting to unfollow')
 #while driver.find_elements_by_class_name('sqdOP.L3NKy._8A5w5'):
 #    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
+unfollowedactually = 0
 unfollowed = 0
 while unfollowed <= 4:
     while driver.find_elements_by_class_name('sqdOP.L3NKy._8A5w5'): 
@@ -49,7 +50,9 @@ while unfollowed <= 4:
             driver.find_element_by_class_name('aOOlW.-Cab_').click()
             time.sleep(cooldown)
             scrollcounter = scrollcounter + 1
-            print('Unfollowed the the ' + str(scrollcounter) + '. user')
+            unfollowedactually = unfollowedactually + 1
+            print('Unfollowed the the ' + str(unfollowedactually) + '. user')
+            #print('Unfollowed the the ' + str(scrollcounter) + '. user')
         while scrollcounter == 12:
             time.sleep(0.5)
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
