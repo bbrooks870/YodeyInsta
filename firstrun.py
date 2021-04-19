@@ -1,6 +1,7 @@
 from instapy import InstaPy
 import time
 import sys
+import art
 
 username = str(input('Your username?: '))
 password = str(input('Your password?: '))

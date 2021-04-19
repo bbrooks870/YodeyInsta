@@ -2,8 +2,7 @@ from instapy import InstaPy
 
 storypercent = int(input("What percentage of stories to watch?: "))
 
-#from creds import username
-#from creds import password
+import art
 
 with open('creds.txt', 'r') as file:
     content = file.readlines()

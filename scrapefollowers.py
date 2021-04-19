@@ -1,8 +1,7 @@
 from instapy import InstaPy
 gurun = str(input('Guru username?: '))
 
-#from creds import username
-#from creds import password
+import art
 
 with open('creds.txt', 'r') as file:
     content = file.readlines()

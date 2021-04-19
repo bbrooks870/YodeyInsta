@@ -11,8 +11,7 @@ driver = webdriver.Firefox(profile)
 cooldown = random.uniform(1, 2.5)
 unfollowcooldown = random.uniform(900, 930)
 
-#from creds import username
-#from creds import password
+import art
 
 with open('creds.txt', 'r') as file:
     content = file.readlines()
