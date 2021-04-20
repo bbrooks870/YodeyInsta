@@ -2,6 +2,8 @@ from instapy import InstaPy
 import time
 import sys
 import art
+import geckodriver_autoinstaller
+geckodriver_autoinstaller.install()
 
 username = str(input('Your username?: '))
 password = str(input('Your password?: '))
