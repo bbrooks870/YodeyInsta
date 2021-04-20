@@ -1,15 +1,16 @@
 import time
 import random
 from selenium import webdriver
-gurun = str(input('Username to follow followers?: '))
+from selenium.common.exceptions import NoSuchElementException
 profile = webdriver.FirefoxProfile()
 profile.set_preference("general.useragent.override", "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 " "(KHTML, like Gecko) FxiOS/18.1 Mobile/16B92 Safari/605.1.15")
-driver = webdriver.Firefox(profile)
 
 cooldown = random.uniform(2.5, 3.5)
 unfollowcooldown = random.uniform(900, 930)
 
 import art
+
+gurun = str(input('Username to follow followers?: '))
 
 with open('creds.txt', 'r') as file:
     content = file.readlines()
@@ -17,6 +18,7 @@ with open('creds.txt', 'r') as file:
     password = content[1]
 
 #driver.set_window_size(853, 853)
+driver = webdriver.Firefox(profile)
 driver.set_window_size(480, 853)
 driver.get('https://www.instagram.com/accounts/login/')
 time.sleep(3)
@@ -46,6 +48,12 @@ while unfollowed <= 2:
         scrollcounter = 0
         while scrollcounter <= 10:
             driver.find_element_by_xpath('/html/body/div[1]/section/main/div/ul/div/li[' + str(follownu) + ']/div/div[2]/button').click()
+            #/html/body/div[4]/div/div/div/div[3]/button[2]
+            try:
+                unfollowcancel = driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
+                unfollowcancel.click()
+            except NoSuchElementException:
+                pass
             time.sleep(cooldown)
             follownu = follownu + 1
             scrollcounter = scrollcounter + 1
